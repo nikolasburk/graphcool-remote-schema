@@ -19,6 +19,7 @@ async function run() {
     schema: userServiceSchemaDefinition,
     link: makeUserServiceLink()
   })
+  debugger
 
   // 4. Create and start proxy server based on the executable schema
   const server = new GraphQLServer({ schema: userServiceExecutableSchema })
